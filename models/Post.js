@@ -26,6 +26,7 @@ Post.init(
                 isURL: true
             }
         },
+        // create foreign user_id constraint
         user_id: {
             type: DataTypes.INTEGER,
             references: {
