@@ -2,27 +2,34 @@
     box-sizing: border-box;
   }
   
-  body, html {
+  body, html, h3 {
     height: 100%;
-    padding: 0;
+    padding: 0 5%;
     margin: 0;
     font-family: sans-serif;
     color: #333;
+    border-radius: 5px;
+    border-color: slategray;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #ff753a;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #ff643d;
+  }
+
+  h3 {
+      color: #333;
+      border-bottom: 1px solid #7d7d7d;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #ff643d;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +40,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #ff753a;
   }
   
   .post-list {
@@ -49,7 +56,7 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #333;
   }
   
   textarea {
@@ -79,7 +86,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1%;
+    padding: 0 12%;
   }
   
   header h1 {
@@ -93,11 +100,11 @@
   
   .btn-no-style {
     background: none;
-    border: none;
+    border: 1;
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #333;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -107,10 +114,11 @@
   .btn-no-style:hover {
     background: none;
     color: #3486eb;
+    opacity: 50%;
   }
   
   .delete-post-btn {
-    background-color: #d41414;
+    background-color: #333;
   }
   
   .delete-post-btn:hover {
@@ -133,15 +141,6 @@
     margin: -1.5% 0 2% 0;
   }
   
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
   .comment-form {
     margin-bottom: 5%;
   }
@@ -152,7 +151,7 @@
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #ff753a;
   }
   
   .comment .meta {

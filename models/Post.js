@@ -3,8 +3,6 @@ const sequelize = require('../config/connection');
 
 // create our Post model
 class Post extends Model {
-    static upvote(body, models) {
-    }
 }
 // create fields/columns for Post model
 Post.init(
