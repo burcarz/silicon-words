@@ -97,6 +97,11 @@
     flex: 1;
     padding: 2% 4%;
   }
+
+  li {
+    background-color: #ccc;
+    border: 1px solid #333;
+  }
   
   .btn-no-style {
     background: none;

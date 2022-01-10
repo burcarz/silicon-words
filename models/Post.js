@@ -24,6 +24,10 @@ Post.init(
                 isURL: true
             }
         },
+        post_text: {
+            type: DataTypes.TEXT,
+            allowNull: true,
+        },
         // create foreign user_id constraint
         user_id: {
             type: DataTypes.INTEGER,
